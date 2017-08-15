@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Hover.css - A collection of CSS3 powered hover effects</title>
+		<link href="css/demo-page.css" rel="stylesheet" media="all">
+		<link href="css/hover.css" rel="stylesheet" media="all">
+		<script type="text/javascript" src="js/Chart.min.js"></script>
+		<script type="text/javascript" src="js/Chartnew.min.js"></script>
+	
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+	</head>
+	<body>
+
+		<!--[if lt IE 10]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="main">
+			
+
+
+			<div id="effects" class="effects">
+
+				<h2>Chart</h2>
+
+				<nav>
+					<ul>
+						<li><a href="hover.html">Hover</a></li>
+						<li><a href="scrolldown.html">Scroll down</a></li>
+						<li><a href="mouseclick.html" title="hover.css Tutorial and Introduction">Mouse click</a></li>
+						<li><a href="logoanimation.html" title="Licenses">Logo animation</a></li>
+					</ul>
+				</nav>
+
+				<br>
+
+				<div >
+	            
+	            <canvas id="collumnchart" width="1000" height="500"></canvas>
+
+	            <br>
+	            
+	            <canvas id="linechart" width="1000" heigt="500"> </canvas>
+
+	            </div>
+
+
+				
+			</div>
+
+		</div>
+
+		<script>
+			
+			// column chart data
+
+			var ctx = "collumnchart";
+			var collumnchart = new Chart(ctx, {
+			    type: 'bar',
+			    data: {
+			    labels: ["Jan", "Feb", "Mar", "Apr", "May", "June","July","Aug","Sep","Oct","Nov","Dec"],
+			    datasets: [
+			            {
+			            backgroundColor: [
+			                "#ffed6f",
+			                "#ccebc5",
+			                "#bc80bd",
+			                "#d9d9d9",
+			                "#fccde5",
+			                "#80b1d3",
+			                "#fdb462",
+			                "#b3de69",
+			                "#fb8072",
+			                "#bebada",
+			                "#ffffb3",
+			                "#8dd3c7"
+			            ],
+			            borderColor: [
+			                "#ffed6f",
+			                "#ccebc5",
+			                "#bc80bd",
+			                "#d9d9d9",
+			                "#fccde5",
+			                "#80b1d3",
+			                "#fdb462",
+			                "#b3de69",
+			                "#fb8072",
+			                "#bebada",
+			                "#ffffb3",
+			                "#8dd3c7"
+			            ],
+			            borderWidth: 1,
+			            data: [1,5,6,7,8,2,6,7,8,9,4,10]
+			        }]
+						},
+			    options: {
+			    	legend: {
+			        display: false
+			    },
+			       segmentShowStroke : true,
+					animateScale : true
+			    }
+			});
+
+			//linechart
+
+			var ctx = "linechart";
+			var linechart = new Chart(ctx, {
+			    type: 'line',
+			    data: {
+			    labels: ["1","2","3","4","5","6","7","8","9","10"],
+			    datasets: [
+			        {
+			            label: "Doanh thu tính theo $",
+			            fill: false,
+			            lineTension: 0.1,
+			            backgroundColor: "rgba(75,192,192,0.4)",
+			            borderColor: "rgba(75,192,192,1)",
+			            borderCapStyle: 'butt',
+			            borderDash: [],
+			            borderDashOffset: 0.0,
+			            borderJoinStyle: 'miter',
+			            pointBorderColor: "rgba(75,192,192,1)",
+			            pointBackgroundColor: "#fff",
+			            pointBorderWidth: 1,
+			            pointHoverRadius: 5,
+			            pointHoverBackgroundColor: "rgba(75,192,192,1)",
+			            pointHoverBorderColor: "rgba(220,220,220,1)",
+			            pointHoverBorderWidth: 2,
+			            pointRadius: 1,
+			            pointHitRadius: 10,
+			            data: [1,5,6,7,8,9,4,6,10,5],					      
+		                spanGaps: false,
+						        }]
+						},
+			    options: {
+			    	legend: {
+			        display: false
+			    },
+			       segmentShowStroke : false,
+					animateScale : true
+			    }
+			});
+
+
+
+
+		</script>
+	</body>
+</html>

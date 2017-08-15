@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Page Scroll Effects | CodyHouse</title>
+</head>
+<!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
+<body data-hijacking="on" data-animation="rotate">
+	<section class="cd-section visible">
+		<div>
+			<h2>Page Scroll Effects</h2>
+		</div>
+	</section>
+
+	<section class="cd-section">
+		<div>
+			<h2>Section 2</h2>
+		</div>
+	</section>
+
+	<section class="cd-section">
+		<div>
+			<h2>Section 3</h2>
+		</div>
+	</section>
+
+	<section class="cd-section">
+		<div>
+			<h2>Section 4</h2>
+		</div>
+	</section>
+
+	<section class="cd-section">
+		<div>
+			<h2>Section 5</h2>
+		</div>
+	</section>
+
+	<nav>
+		<ul class="cd-vertical-nav">
+			<li><a href="#0" class="cd-prev inactive">Next</a></li>
+			<li><a href="#0" class="cd-next">Prev</a></li>
+		</ul>
+	</nav> <!-- .cd-vertical-nav -->
+
+	<div class="cd-demo-settings">
+
+		<div class="cd-select">
+			<label for="selectAnimation">Animation:</label>
+
+			<select class="animation" name="selectAnimation" id="selectAnimation">
+				<option value="none">None</option>
+				<option value="scaledown">scaleDown</option>
+				<option value="gallery" >gallery</option>
+				<option value="catch">catch</option>
+				<option value="rotate" selected>rotate</option>
+				<option value="opacity">opacity</option>
+				<option value="fixed">fixed</option>
+				<option value="parallax">parallax</option>
+			</select>
+		</div> <!-- cd-select -->
+
+		<div class="cd-select">
+			<label for="selectHijacking">Hijacking:</label>
+
+			<select class="hijacking" name="selectHijacking" id="selectHijacking">
+				<option value="off" >Off</option>
+				<option value="on" selected>On</option>
+			</select>
+		</div> <!-- cd-select -->
+	</div> <!-- cd-demo-settings -->
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/velocity.ui.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  	ga('create', 'UA-48014931-1', 'codyhouse.co');
+  	ga('send', 'pageview');
+
+  	jQuery(document).ready(function($){
+  		$('.close-carbon-adv').on('click', function(event){
+  			event.preventDefault();
+  			$('#carbonads-container').hide();
+  		});
+  	});
+</script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sliders</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,400,400i,700" rel="stylesheet">
+  
+
+		<link href="css/font-awesome.min.css" rel="stylesheet" media="all">
+      <link rel="stylesheet" href="css/table2.css">
+        		<link href="css/demo-page.css" rel="stylesheet" media="all">
+
+
+  
+</head>
+
+<body>
+
+		<div class="">
+			
+			<a href="index.html"><h1>JS EFFECT DEMO SITE </h1></a>
+
+			<nav>
+				<ul>
+					<li><a href="menu2.html">MENU, NAVIGATION</a></li>
+					<li><a href="slider2.html">SLIDERS, GALLERIES</a></li>
+					<li><a href="loadingscreen2.html">LOADING SCREEN</a></li>
+					<li><a href="hovereffect2.html">HOVER</a></li>
+					<li><a href="mouseclick2.html">CLICK</a></li>
+					<li><a href="scroll2.html">SCROLL</a></li>
+					<li><a href="pagemotion.html">PAGE MOTION</a></li>
+					<li><a href="popup2.html">POPUP</a></li>
+					<li><a href="others2.html">OTHERS</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+				  <h2>SLIDERS, GALLERIES</h2>
+
+
+
+<table id="content-table3" class="table-responsive-full sort-table">
+	<thead>
+		<tr>
+			<th class="id">ID
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'id', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'id', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="title">Title
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'title', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'title', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="category">Category
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'category', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'category', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="demo">Demo
+				<div class="sort-table-arrows">
+<!-- 					<a href="javascript:sort(true, 'lyrics', 'content-table3');"><button class="button" title="Αύξουσα ταξινόμηση"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'lyrics', 'content-table3');"><button class="button" title="Φθίνουσα ταξινόμηση"><i class="fa fa-chevron-up"></i></button></a> -->
+				</div>
+			</th>
+			<th class="chrome"><img src="images/chrome.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'chrome', 'content-table3');"><button class="button" ><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'chrome', 'content-table3');"><button class="button" ><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="mozilla"><img src="images/mozilla.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'mozilla', 'content-table3');"><button class="button" ><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'mozilla', 'content-table3');"><button class="button" ><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="explorer"><img src="images/explorer.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'explorer', 'content-table3');"><button class="button" ><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'explorer', 'content-table3');"><button class="button" ><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="safari"><img src="images/safari.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'safari', 'content-table3');"><button class="button" ><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'safari', 'content-table3');"><button class="button" ><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="opera"><img src="images/opera.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'opera', 'content-table3');"><button class="button" ><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'opera', 'content-table3');"><button class="button" ><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="responsive"><img src="images/responsive.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'responsive', 'content-table3');"><button class="button" ><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'responsive', 'content-table3');"><button class="button" ><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-label="id" class="id">1</td>
+			<td data-label="Title" class="title" class="title">Slick</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/slick/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/slick/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">edge</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+
+
+		</tr>
+		<tr>
+			<td data-label="id" class="id">2</td>
+			<td data-label="Title" class="title">Camera Pixedelic</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/CameraSlider/demo/basic.htm');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/CameraSlider/demo/basic.htm');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">9</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">3</td>
+			<td data-label="Title" class="title">3D Book showcase</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/3DBookShowcase/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/3DBookShowcase/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">edge</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">No</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">4</td>
+			<td data-label="Title" class="title">3D Gallery Room</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/3DGalleryRoom/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/3DGalleryRoom/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">No</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">5</td>
+			<td data-label="Title" class="title">Stack Slider</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/StackSlider/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/StackSlider/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">6</td>
+			<td data-label="Title" class="title">Stapel</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/Stapel/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/Stapel/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">8</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">7</td>
+			<td data-label="Title" class="title">Windy</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/Windy/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/Windy/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">8</td>
+			<td data-label="Title" class="title">BookBlock</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/BookBlock/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/BookBlock/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">edge</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">9</td>
+			<td data-label="Title" class="title">TriplePanelImageSlider</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/TriplePanelImageSlider/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/TriplePanelImageSlider/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes( not recommend )</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">10</td>
+			<td data-label="Title" class="title">PhotoBoothStripsLightbox</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/PhotoBoothStripsLightbox/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/PhotoBoothStripsLightbox/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">9</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">11</td>
+			<td data-label="Title" class="title">CSS3ImageAccordion</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/CSS3ImageAccordion/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/CSS3ImageAccordion/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">12</td>
+			<td data-label="Title" class="title">SlitSlider</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/FullscreenSlitSlider/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/FullscreenSlitSlider/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">13</td>
+			<td data-label="Title" class="title">FlipboardPageLayout</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/FlipboardPageLayout/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/FlipboardPageLayout/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">none</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">No</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">14</td>
+			<td data-label="Title" class="title">ParallaxContentSlider</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/ParallaxContentSlider/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/ParallaxContentSlider/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">15</td>
+			<td data-label="Title" class="title">3DGallery</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/3DGallery/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/3DGallery/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">edge</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">16</td>
+			<td data-label="Title" class="title">SlidingImagePanels</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/CSS3SlidingImagePanels/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/CSS3SlidingImagePanels/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">17</td>
+			<td data-label="Title" class="title">GridLoadingGallery</td>
+			<td data-label="category" class="category">Gallery</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/GridLoadingEffects/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/GridLoadingEffects/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">18</td>
+			<td data-label="Title" class="title">MockupSlideshow</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/MockupSlideshow/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/MockupSlideshow/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">19</td>
+			<td data-label="Title" class="title">Overlay Slider</td>
+			<td data-label="category" class="category">Slider</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/image-overlay-slider/index.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/image-overlay-slider/index.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+
+
+	</tbody>
+</table>
+  	<script src="https://use.fontawesome.com/47886b77a3.js"></script>
+
+    <script src="js/table2.js"></script>
+
+</body>
+</html>

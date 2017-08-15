@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Loading</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:300,400,400i,700" rel="stylesheet">
+  
+		<link href="css/perfect-scrollbar.css">
+		<link href="css/font-awesome.min.css" rel="stylesheet" media="all">
+      <link rel="stylesheet" href="css/table2.css">
+        		<link href="css/demo-page.css" rel="stylesheet" media="all">
+
+
+  
+</head>
+
+<body>
+
+		<div class="">
+			
+			<a href="index.html"><h1>JS EFFECT DEMO SITE </h1></a>
+
+			<nav>
+				<ul>
+					<li><a href="menu2.html">MENU, NAVIGATION</a></li>
+					<li><a href="slider2.html">SLIDERS, GALLERIES</a></li>
+					<li><a href="loadingscreen2.html">LOADING SCREEN</a></li>
+					<li><a href="hovereffect2.html">HOVER</a></li>
+					<li><a href="mouseclick2.html">CLICK</a></li>
+					<li><a href="scroll2.html">SCROLL</a></li>
+					<li><a href="pagemotion.html">PAGE MOTION</a></li>
+					<li><a href="popup2.html">POPUP</a></li>
+					<li><a href="others2.html">OTHERS</a></li>
+
+				</ul>
+			</nav>
+		</div>
+
+				  <h2>LOADING SCREEN</h2>
+
+
+
+<table id="content-table3" class="table-responsive-full sort-table">
+	<thead>
+		<tr>
+			<th class="id">ID
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'id', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'id', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="title">Title
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'title', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'title', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="category">Category
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'category', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'category', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="demo">Demo
+				<div class="sort-table-arrows">
+<!-- 					<a href="javascript:sort(true, 'lyrics', 'content-table3');"><button class="button" title="Αύξουσα ταξινόμηση"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'lyrics', 'content-table3');"><button class="button" title="Φθίνουσα ταξινόμηση"><i class="fa fa-chevron-up"></i></button></a> -->
+				</div>
+			</th>
+			<th class="set"><img src="images/chrome.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="set"><img src="images/mozilla.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="set"><img src="images/explorer.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="set"><img src="images/safari.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="set"><img src="images/opera.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'set', 'content-table3');"><button class="button"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+			<th class="set"><img src="images/responsive.png" style="height: 25px; width: 25px;">
+				<div class="sort-table-arrows">
+					<a href="javascript:sort(true, 'category', 'content-table3');"><button class="button" title="Αύξουσα ταξινόμηση"><i class="fa fa-chevron-down"></i></button></a>
+					<a href="javascript:sort(false, 'category', 'content-table3');"><button class="button" title="Φθίνουσα ταξινόμηση"><i class="fa fa-chevron-up"></i></button></a>
+				</div>
+			</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td data-label="id" class="id">1</td>
+			<td data-label="Title" class="title" class="title">Square Animations 1</td>
+			<td data-label="category" class="category">Square</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo1.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo1.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+
+
+		</tr>
+		<tr>
+			<td data-label="id" class="id">2</td>
+			<td data-label="Title" class="title">Square Animations 2</td>
+			<td data-label="category" class="category">Square</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo2.html');" >View Demo</button>		
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo2.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">3</td>
+			<td data-label="Title" class="title">Square Animations 3</td>
+			<td data-label="category" class="category">Square</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo4.html');">View Demo</button>	
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo4.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">4</td>
+			<td data-label="Title" class="title">Square Animations 4</td>
+			<td data-label="category" class="category">Square</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo4.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo4.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">5</td>
+			<td data-label="Title" class="title">Square Animations 5</td>
+			<td data-label="category" class="category">Square</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo9.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo9.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">6</td>
+			<td data-label="Title" class="title">Round Animations 1</td>
+			<td data-label="category" class="category">Round</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo11.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo11.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+		<tr>
+			<td data-label="id" class="id">7</td>
+			<td data-label="Title" class="title">Round Animations 2</td>
+			<td data-label="category" class="category">Round</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo12.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo12.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">8</td>
+			<td data-label="Title" class="title">Round Animations 3</td>
+			<td data-label="category" class="category">Round</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo16.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo16.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">9</td>
+			<td data-label="Title" class="title">Round Animations 4</td>
+			<td data-label="category" class="category">Round</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo20.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo20.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">10</td>
+			<td data-label="Title" class="title">Various Animations 1</td>
+			<td data-label="category" class="category">Various</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo23.html');" >View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo23.html');" >Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">11</td>
+			<td data-label="Title" class="title">Various Animations 2</td>
+			<td data-label="category" class="category">Various</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo24.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo24.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+		<tr>
+			<td data-label="id" class="id">12</td>
+			<td data-label="Title" class="title">Various Animations 3</td>
+			<td data-label="category" class="category">Various</td>
+			<td data-label="demo" class="demo">
+			<button onclick="window.open('effectlist/30-css-page-preload-animations/demo27.html');">View Demo</button>
+			<button onclick="opensmallwindow('effectlist/30-css-page-preload-animations/demo27.html');">Quick View</button></td>
+			<td data-label="Set" class="chrome">59</td>
+			<td data-label="Set" class="mozilla">53</td>
+			<td data-label="Set" class="explorer">10</td>
+			<td data-label="Set" class="safari">5.1.7</td>
+			<td data-label="Set" class="opera">45</td>
+			<td data-label="Set" class="responsive">Yes</td>
+		</tr>
+
+
+	</tbody>
+</table>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+
+  	<script src="https://use.fontawesome.com/47886b77a3.js"></script>
+
+	<script src="js/perfect-scrollbar.min.js"></script>
+
+    <script src="js/table2.js"></script>
+
+</body>
+</html>
